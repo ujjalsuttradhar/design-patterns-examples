@@ -14,10 +14,12 @@ public class EnchantedMazeFactory extends MazeFactory {
         
     }
     
+    @Override
     Room MakeRoom(int n) {
         return new EnchantedRoom(n, true);
     }
     
+    @Override
     Door MakeDoor(Room r1, Room r2) {
         return new DoorNeedingSpell(r1, r2);
     }

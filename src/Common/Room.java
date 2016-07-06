@@ -1,10 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Common;
-
-import java.util.ArrayList;
 
 /**
  *
@@ -12,18 +6,19 @@ import java.util.ArrayList;
  */
 public class Room extends MapSite {
     private int roomNumber;
-    private ArrayList<MapSite> sides = new ArrayList<MapSite>();
+    private MapSite[] sides;
     
     public Room(int roomNo) {
         roomNumber = roomNo;
+        sides = new MapSite[4];
     }
     
     public MapSite GetSide(int direction) {
-        return sides.get(direction);
+        return sides[direction];
     }
     
-    public void SetSide(Direction direction, MapSite mapSite) {
-        sides.set(direction.ordinal(), mapSite);
+    public void SetSide(Enums.Direction direction, MapSite mapSite) {
+        sides[direction.ordinal()] = mapSite;
     }
 
     @Override

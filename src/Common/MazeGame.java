@@ -14,15 +14,15 @@ public class MazeGame {
         maze.AddRoom(r1);
         maze.AddRoom(r2);
         
-        r1.SetSide(Direction.North, new Wall());
-        r1.SetSide(Direction.East, d1);
-        r1.SetSide(Direction.South, new Wall());
-        r1.SetSide(Direction.West, new Wall());
+        r1.SetSide(Enums.Direction.North, new Wall());
+        r1.SetSide(Enums.Direction.East, d1);
+        r1.SetSide(Enums.Direction.South, new Wall());
+        r1.SetSide(Enums.Direction.West, new Wall());
         
-        r2.SetSide(Direction.North, new Wall());
-        r2.SetSide(Direction.East, new Wall());
-        r2.SetSide(Direction.South, new Wall());
-        r2.SetSide(Direction.West, d1);  
+        r2.SetSide(Enums.Direction.North, new Wall());
+        r2.SetSide(Enums.Direction.East, new Wall());
+        r2.SetSide(Enums.Direction.South, new Wall());
+        r2.SetSide(Enums.Direction.West, d1);  
         
         return maze;
     }
