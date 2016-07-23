@@ -1,6 +1,7 @@
 package designpatterns;
 
 import AbstractFactory.AbstractFactoryMain;
+import Builder.BuilderMain;
 
 /**
  *
@@ -8,7 +9,9 @@ import AbstractFactory.AbstractFactoryMain;
  * @date Jul 4, 2016
  */
 public class DesignPatterns {
+
     public static void main(String[] args) {
         AbstractFactoryMain.main();
+        BuilderMain.main();
     }
 }
